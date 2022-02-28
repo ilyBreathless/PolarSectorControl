@@ -1,0 +1,19 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp7"
+        xmlns:Gui="clr-namespace:Arction.Wpf.SignalProcessing.Gui;assembly=Arction.Wpf.SignalProcessing.SignalTools" x:Class="WpfApp7.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="583.233" Width="877.334">
+    <Grid Background="#333">
+        <local:PSControl1 x:Name="PSControl"/>
+        <TextBox x:Name ="tbSectorsCount" TextChanged="tbSectorsCount_TextChanged" HorizontalAlignment="Left" Height="26" Margin="216,369,0,0" TextWrapping="Wrap" Text="8" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Sectors Count:" HorizontalAlignment="Left" Margin="120,369,0,0" VerticalAlignment="Top"/>
+        <Slider x:Name="sliderRotatingCar"  MinWidth="300" Value="0" Minimum="0" Maximum="360" ValueChanged="sliderRotatingCar_ValueChanged" HorizontalAlignment="Left" Margin="487,369,0,0" VerticalAlignment="Top" Height="30" Width="236"/>
+        <TextBox x:Name="tbAerialsCount" TextChanged="tbAerialsCount_TextChanged" HorizontalAlignment="Left" Height="29" Margin="216,419,0,0" TextWrapping="Wrap" Text="6" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Aerial Count" HorizontalAlignment="Left" Margin="120,419,0,0" VerticalAlignment="Top"/>
+        <Label Content="Rotate Car" HorizontalAlignment="Left" Margin="392,369,0,0" VerticalAlignment="Top" Width="71"/>
+    </Grid>
+</Window>
